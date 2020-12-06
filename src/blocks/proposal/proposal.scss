@@ -1,6 +1,6 @@
 $borderBtn: 2px solid #fff;
 
-.proposal{
+.proposal {
     background-image: url('assets/img/bg.png');
     mix-blend-mode: soft-light;
     background-position-x: center;
@@ -14,22 +14,35 @@ $borderBtn: 2px solid #fff;
     background-color: #0072ff;
     margin-left: 26px;
 
-    &__wrapper{
+    @media (max-width: 768px) {
+        margin: auto 10px;
+    }
+
+    &__wrapper {
         max-width: 1176px;
         width: 100%;
         margin: 249px auto 0px;
+
+        @media (max-width: 768px) {
+            margin-top: 41px;
+        }
     }
 
-    &__title{
+    &__title {
         font-family: 'Roboto-Regular';
         font-weight: 400;
         font-style: normal;
         font-size: 40px;
         line-height: 52px;
         color: #fff;
+
+        @media (max-width: 375px) {
+            font-size: 31px;
+            padding: 14px;
+        }
     }
 
-    &__text{
+    &__text {
         font-family: 'Roboto-Regular';
         font-weight: 400;
         font-style: normal;
@@ -37,9 +50,13 @@ $borderBtn: 2px solid #fff;
         line-height: 32px;
         color: rgba(255, 255, 255, 0.6);
         margin-top: 19px;
+
+        @media (max-width: 375px) {
+            padding: 0 14px;
+        }
     }
 
-    &__buttons{
+    &__buttons {
         margin-top: 63px;
         margin-left: 10px;
         font-family: 'Roboto-Regular';
@@ -47,37 +64,53 @@ $borderBtn: 2px solid #fff;
         font-style: normal;
         font-size: 16px;
         line-height: 18px;
-        color: #183B56;
+        color: #183b56;
+
+        @media (max-width: 425px) {
+            flex-direction: column;
+            display: flex;
+            height: 210px;
+            justify-content: space-around;
+        }
+
+        @media (max-width: 375px) {
+            margin-top: 20px;
+        }
     }
 
-    &__link{
+    &__link {
         padding: 12px 45px;
         border-radius: 50px;
         margin-right: 20px;
         background-color: #fff;
         border: $borderBtn;
 
-        &:last-child{
+        &:last-child {
             margin-right: 0;
         }
 
-        &--white{
+        &--white {
             background-color: #fff;
             border: $borderBtn;
             color: #4d61fc;
 
-            &:hover{
+            &:hover {
                 background-color: #4d61fc;
                 color: #fff;
             }
         }
 
-        &--blue{
+        &--blue {
             background-color: #4d61fc;
             border: $borderBtn;
             color: #fff;
 
-            &:hover{
+            @media (max-width: 425px) {
+                width: 183px;
+                font-size: 15px;
+            }
+
+            &:hover {
                 background-color: #fff;
                 color: #4d61fc;
             }

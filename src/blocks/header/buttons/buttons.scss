@@ -1,6 +1,6 @@
-$borderBtn: 2px solid #16133D;
+$borderBtn: 2px solid #16133d;
 
-.buttons{
+.buttons {
     width: 119px;
     height: 48px;
     border: $borderBtn;
@@ -9,9 +9,18 @@ $borderBtn: 2px solid #16133D;
     text-align: center;
     line-height: 42px;
     cursor: pointer;
+
+    &--white {
+        @media (max-width: 425px) {
+            width: 100px;
+            margin-right: 5px;
+            font-size: 14px;
+            padding: 2px 5px 5px 5px;
+        }
+    }
 }
 
-.button__link{
+.button__link {
     font-family: 'Roboto-Medium';
     font-weight: 500;
     font-style: normal;
@@ -20,25 +29,35 @@ $borderBtn: 2px solid #16133D;
     border-radius: 5px;
     padding: 5px 5px 5px 5px;
 
-    &--blue{
+    &--blue {
         color: #fff;
-        background-color: #16133D;
+        background-color: #16133d;
         padding: 11px 38px 14px;
 
-        &:hover{
-            color: #16133D;
+        @media (max-width: 425px) {
+            font-size: 14px;
+            padding: 13px 39px 14px 41px;
+        }
+
+        &:hover {
+            color: #16133d;
             background-color: #fff;
         }
     }
 
-    &--white{
-        color: #16133D;
+    &--white {
+        color: #16133d;
         background-color: #fff;
         padding: 11px 36px 14px 30px;
 
-        &:hover{
+        @media (max-width: 425px) {
+            font-size: 14px;
+            padding: 5px;
+        }
+
+        &:hover {
             color: #fff;
-            background-color: #16133D;
+            background-color: #16133d;
         }
     }
 }

@@ -1,42 +1,50 @@
-.slider{
-    &__container{
+.slider {
+    &__container {
         max-width: 576px;
         width: 100%;
+
+        @media (max-width: 425px) {
+            padding: 10px;
+        }
     }
 }
 
-.arrow{
-    &__wrapper{
+.arrow {
+    &__wrapper {
         width: 55px;
-        background-color: #16133D;
+        background-color: #16133d;
         border-radius: 5px;
         height: 55px;
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @media (max-width: 425px) {
+            display: none;
+        }
     }
 
-    &__left{
+    &__left {
         position: relative;
         top: 234px;
         left: -27px;
         padding: 17px;
         cursor: pointer;
 
-        &:hover{
-            background-color: #007FFC;
+        &:hover {
+            background-color: #007ffc;
         }
     }
 
-    &__right{
+    &__right {
         position: relative;
         bottom: 238px;
         left: 549px;
         padding: 17px;
         cursor: pointer;
 
-        &:hover{
-            background-color: #007FFC;
+        &:hover {
+            background-color: #007ffc;
         }
     }
 }

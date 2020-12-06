@@ -1,28 +1,36 @@
-.price{
-    &__item{
+.price {
+    &__item {
         text-align: center;
         max-width: 360px;
         width: 100%;
 
-        &--blue{
-            border-top: 3px solid #007FFC;
+        &--blue {
+            border-top: 3px solid #007ffc;
+
+            @media (max-width: 768px) {
+                margin-bottom: 18px;
+            }
         }
 
-        &--green{
-            border-top: 3px solid #52C29D;
+        &--green {
+            border-top: 3px solid #52c29d;
+
+            @media (max-width: 768px) {
+                margin-bottom: 18px;
+            }
         }
 
-        &--red{
-            border-top: 3px solid #F04D5D;
+        &--red {
+            border-top: 3px solid #f04d5d;
         }
 
-        &:hover{
+        &:hover {
             background-color: #eee;
             cursor: pointer;
         }
     }
 
-    &__title{
+    &__title {
         font-family: 'Roboto-Regular';
         font-style: normal;
         font-weight: 400;
@@ -30,11 +38,11 @@
         line-height: 32px;
         text-align: center;
         letter-spacing: 0.2px;
-        color: #16133D;
+        color: #16133d;
         margin-top: 50px;
     }
 
-    &__name{
+    &__name {
         font-family: 'Roboto-Bold';
         font-style: normal;
         font-weight: 700;
@@ -44,51 +52,51 @@
         letter-spacing: 0.2px;
         margin-top: 32px;
 
-        &--blue{
-            color: #007FFC;
+        &--blue {
+            color: #007ffc;
         }
 
-        &--green{
-            color: #52C29D;
+        &--green {
+            color: #52c29d;
         }
 
-        &--red{
-            color: #F04D5D;
+        &--red {
+            color: #f04d5d;
         }
     }
 
-    &__period{
+    &__period {
         font-family: 'Roboto-Regular';
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
         text-align: center;
-        color: #5A7184;
+        color: #5a7184;
         margin-top: 5px;
     }
 
-    &__text{
+    &__text {
         font-family: 'Roboto-Regular';
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 28px;
         text-align: center;
-        color: #7690A8;
+        color: #7690a8;
         max-width: 287px;
         width: 100%;
         margin: 35px auto 0px 35px;
 
-        &--small{
+        &--small {
             max-width: 256px;
             margin: 34px auto;
         }
     }
 
-    &__button{
+    &__button {
         padding: 9px;
-        border: 2px solid #16133D;
+        border: 2px solid #16133d;
         box-sizing: border-box;
         border-radius: 50px;
         max-width: 171px;
@@ -97,8 +105,8 @@
         display: block;
         cursor: pointer;
 
-        &:hover{
-            background-color: #16133D;
+        &:hover {
+            background-color: #16133d;
             color: #fff;
         }
     }

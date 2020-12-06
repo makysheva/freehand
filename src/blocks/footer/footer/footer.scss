@@ -1,12 +1,16 @@
-.footer{
-    &__container{
+.footer {
+    &__container {
         width: 100%;
-        background: #16133D;
+        background: #16133d;
         margin-top: 200px;
         color: #fff;
+
+        @media (max-width: 768px) {
+            margin-top: 69px;
+        }
     }
 
-    &__navigation{
+    &__navigation {
         display: flex;
         flex-direction: row;
         max-width: 669px;
@@ -14,26 +18,49 @@
         justify-content: space-around;
         margin-right: 172px;
         margin-top: 89px;
+
+        @media (max-width: 768px) {
+            margin-right: 10px;
+        }
+
+        @media (max-width: 425px) {
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 320px) {
+            flex-wrap: nowrap;
+            flex-direction: column;
+        }
     }
 
-    &__wrapper{
+    &__wrapper {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
-    &__sidebar{
+    &__sidebar {
         margin-top: 93px;
     }
 
-    &__logo{
+    &__logo {
         margin-left: 159px;
         margin-top: 89px;
+
+        @media (max-width: 768px) {
+            margin-left: 10px;
+        }
     }
 }
 
-.sidebar{
-    &__text{
+.sidebar {
+    &__text {
         margin-top: 28px;
         max-width: 285px;
         width: 100%;
@@ -43,10 +70,10 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 28px;
-        color: #EFEEF3;
+        color: #efeef3;
     }
 
-    &__social{
+    &__social {
         margin-top: 58px;
         margin-left: 3px;
         display: flex;
@@ -57,7 +84,7 @@
     }
 }
 
-.social__item{
+.social__item {
     margin-right: 8px;
     cursor: pointer;
     width: 38px;
@@ -65,19 +92,24 @@
     background-color: #eee;
     border-radius: 5px;
 
-    &:hover{
+    &:hover {
         color: #65637f;
     }
 }
 
-.copyright{
+.copyright {
     text-align: center;
     margin-top: 144px;
     margin-left: 5px;
     letter-spacing: 0.5px;
     padding-bottom: 70px;
 
-    &__text{
+    @media (max-width: 768px) {
+        margin-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    &__text {
         font-family: system-ui;
         font-size: 15px;
     }

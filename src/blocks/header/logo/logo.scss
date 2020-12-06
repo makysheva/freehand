@@ -1,5 +1,5 @@
-.logo{
-    &__container{
+.logo {
+    &__container {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -7,12 +7,17 @@
         width: 100%;
         margin-left: 32px;
     }
-    &__text{
+
+    &__text {
         font-family: 'Quicksand';
         font-weight: 500;
         font-style: normal;
         font-size: 35px;
         line-height: 35px;
         letter-spacing: 3px;
+    }
+
+    &__img {
+        max-width: 70%;
     }
 }

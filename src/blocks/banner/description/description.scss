@@ -1,43 +1,62 @@
-$borderBtn: 2px solid #007FFC;
+$borderBtn: 2px solid #007ffc;
 
-.description{
-    &__wrapper{
+.description {
+    &__wrapper {
         max-width: 477px;
         width: 100%;
     }
 
-    &__container{
+    &__container {
         padding-left: 31px;
         padding-top: 1px;
     }
 
-    &__caption{
+    &__caption {
         font-family: system-ui;
         font-weight: 600;
         font-style: normal;
         font-size: 56px;
-        color: #16133D;
+        color: #16133d;
         margin-bottom: 24px;
         max-width: 477px;
         width: 100%;
         line-height: 69px;
         letter-spacing: -0.2px;
+
+        @media (max-width: 320px) {
+            font-size: 28px;
+            line-height: 35px;
+        }
     }
 
-    &__text{
+    &__text {
         font-family: 'Roboto-Regular';
         font-weight: 400;
         font-style: normal;
         font-size: 19px;
         line-height: 36px;
-        color: #183B56;
+        color: #183b56;
         margin-bottom: 47px;
         max-width: 477px;
         width: 100%;
+
+        @media (max-width: 320px) {
+            font-size: 15px;
+            line-height: 23px;
+            margin-bottom: 20px;
+        }
     }
 
-    &__buttons{
+    &__buttons {
         padding-bottom: 64px;
+
+        @media (max-width: 375px) {
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            height: 200px;
+            justify-content: space-around;
+        }
     }
 
     &__link {
@@ -50,35 +69,40 @@ $borderBtn: 2px solid #007FFC;
         border: $borderBtn;
         margin-right: 20px;
 
-        &:last-child{
+        &:last-child {
             margin-right: 0;
         }
 
-        &--blue{
+        &--blue {
             color: #fff;
-            background-color:#007FFC;
+            background-color: #007ffc;
             padding: 14px 39px 9px 40px;
 
-            &:hover{
+            @media (max-width: 375px) {
+                width: 176px;
+                margin-right: 0;
+                font-size: 15px;
+            }
+
+            &:hover {
                 background-color: #fff;
-                color: #007FFC;
-                border-color: #007FFC;
+                color: #007ffc;
+                border-color: #007ffc;
                 border: $borderBtn;
             }
         }
 
-        &--white{
-            color: #007FFC;
-            background-color:#fff;
+        &--white {
+            color: #007ffc;
+            background-color: #fff;
             padding: 14px 47px 9px 44px;
 
-            &:hover{
-                background-color: #007FFC;
+            &:hover {
+                background-color: #007ffc;
                 color: #fff;
-                border-color: #007FFC;
+                border-color: #007ffc;
                 border: $borderBtn;
             }
         }
     }
-
 }

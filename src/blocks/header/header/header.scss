@@ -1,22 +1,30 @@
-.header{
-    &__wrapper{
+.header {
+    &__wrapper {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        border-bottom: 1px solid #EFEEF3;
+        border-bottom: 1px solid #efeef3;
         padding-bottom: 32px;
         max-width: 1186px;
         width: 100%;
         margin: 30px auto 7px auto;
+
+        @media (max-width: 768px) {
+            padding: 0 10px 10px 0;
+        }
     }
 
-    &__buttons{
+    &__buttons {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         max-width: 256px;
         width: 100%;
         padding-top: 3px;
+
+        @media (max-width: 320px) {
+            display: none;
+        }
     }
 }

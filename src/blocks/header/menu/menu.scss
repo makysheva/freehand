@@ -1,19 +1,27 @@
-.menu{
-    &__list{
+.menu {
+    &__list {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
-    &__container{
+    &__container {
         max-width: 362px;
         width: 100%;
         padding-right: 5px;
         margin-left: 52px;
         margin-top: -2px;
+
+        @media (max-width: 768px) {
+            margin-left: 0;
+        }
+
+        @media (max-width: 425px) {
+            display: none;
+        }
     }
 
-    &__link{
+    &__link {
         font-family: 'Roboto-Medium';
         font-style: normal;
         font-weight: 500;
